@@ -9,15 +9,14 @@
  * https://openapi-generator.tech
  * Do not edit the class manually.
  */
-import { Any } from './any';
 
 
-export interface PaginatedResponseDto { 
-    total: number;
-    filtered?: number | null;
-    showing: number;
-    limit: number;
-    offset: number;
-    data: Array<Any>;
-}
+export type FormItemKindInputTextEnum = 'EMAIL' | 'RICH_TEXT' | 'TEXT' | 'TEXTAREA';
+
+export const FormItemKindInputTextEnum = {
+    EMAIL: 'EMAIL' as FormItemKindInputTextEnum,
+    RICH_TEXT: 'RICH_TEXT' as FormItemKindInputTextEnum,
+    TEXT: 'TEXT' as FormItemKindInputTextEnum,
+    TEXTAREA: 'TEXTAREA' as FormItemKindInputTextEnum
+};
 

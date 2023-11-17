@@ -9,15 +9,15 @@
  * https://openapi-generator.tech
  * Do not edit the class manually.
  */
-import { Any } from './any';
+import { FormItemKindInputTypeDateEnum } from './form-item-kind-input-type-date-enum';
 
 
-export interface PaginatedResponseDto { 
-    total: number;
-    filtered?: number | null;
-    showing: number;
-    limit: number;
-    offset: number;
-    data: Array<Any>;
+export interface FormItemResponseDate { 
+    kind: FormItemKindInputTypeDateEnum;
+    key: string;
+    value?: string | null;
 }
+export namespace FormItemResponseDate {
+}
+
 

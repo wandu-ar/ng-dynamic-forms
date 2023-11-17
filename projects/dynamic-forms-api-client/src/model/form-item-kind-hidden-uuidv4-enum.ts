@@ -9,15 +9,11 @@
  * https://openapi-generator.tech
  * Do not edit the class manually.
  */
-import { Any } from './any';
 
 
-export interface PaginatedResponseDto { 
-    total: number;
-    filtered?: number | null;
-    showing: number;
-    limit: number;
-    offset: number;
-    data: Array<Any>;
-}
+export type FormItemKindHiddenUUIDv4Enum = 'HIDDEN_UUID_V4';
+
+export const FormItemKindHiddenUUIDv4Enum = {
+    HIDDEN_UUID_V4: 'HIDDEN_UUID_V4' as FormItemKindHiddenUUIDv4Enum
+};
 

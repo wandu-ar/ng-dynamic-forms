@@ -86,15 +86,6 @@ export class Configuration {
         else {
             this.credentials = {};
         }
-
-        // init default ACCESS TOKEN credential
-        if (!this.credentials['ACCESS TOKEN']) {
-            this.credentials['ACCESS TOKEN'] = () => {
-                return typeof this.accessToken === 'function'
-                    ? this.accessToken()
-                    : this.accessToken;
-            };
-        }
     }
 
     /**

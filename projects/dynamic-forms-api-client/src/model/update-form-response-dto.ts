@@ -9,15 +9,10 @@
  * https://openapi-generator.tech
  * Do not edit the class manually.
  */
-import { Any } from './any';
+import { CreateFormResponseDtoResponsesInner } from './create-form-response-dto-responses-inner';
 
 
-export interface PaginatedResponseDto { 
-    total: number;
-    filtered?: number | null;
-    showing: number;
-    limit: number;
-    offset: number;
-    data: Array<Any>;
+export interface UpdateFormResponseDto { 
+    responses?: Array<CreateFormResponseDtoResponsesInner>;
 }
 

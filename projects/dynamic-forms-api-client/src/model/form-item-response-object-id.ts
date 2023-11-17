@@ -9,15 +9,15 @@
  * https://openapi-generator.tech
  * Do not edit the class manually.
  */
-import { Any } from './any';
+import { FormItemKindInputTypeObjectIdEnum } from './form-item-kind-input-type-object-id-enum';
 
 
-export interface PaginatedResponseDto { 
-    total: number;
-    filtered?: number | null;
-    showing: number;
-    limit: number;
-    offset: number;
-    data: Array<Any>;
+export interface FormItemResponseObjectId { 
+    kind: FormItemKindInputTypeObjectIdEnum;
+    key: string;
+    value?: string | null;
 }
+export namespace FormItemResponseObjectId {
+}
+
 

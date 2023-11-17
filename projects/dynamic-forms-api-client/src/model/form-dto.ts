@@ -9,15 +9,18 @@
  * https://openapi-generator.tech
  * Do not edit the class manually.
  */
-import { Any } from './any';
+import { WithChildrenInner } from './with-children-inner';
 
 
-export interface PaginatedResponseDto { 
-    total: number;
-    filtered?: number | null;
-    showing: number;
-    limit: number;
-    offset: number;
-    data: Array<Any>;
+export interface FormDto { 
+    key: string;
+    title: string;
+    children: Array<WithChildrenInner>;
+    id: string;
+    description: string;
+    submitButtonText?: string | null;
+    successMsg?: string | null;
+    createdAt: string;
+    updatedAt: string;
 }
 

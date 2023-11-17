@@ -9,15 +9,15 @@
  * https://openapi-generator.tech
  * Do not edit the class manually.
  */
-import { Any } from './any';
+import { FormDto } from './form-dto';
 
 
-export interface PaginatedResponseDto { 
+export interface PaginatedResponseOfFormDto { 
     total: number;
     filtered?: number | null;
     showing: number;
     limit: number;
     offset: number;
-    data: Array<Any>;
+    data: Array<FormDto>;
 }
 

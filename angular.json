@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "dynamic-forms": {
+    "dynamic-forms-app": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -32,27 +32,27 @@
           "skipTests": true
         }
       },
-      "root": "projects/dynamic-forms",
-      "sourceRoot": "projects/dynamic-forms/src",
+      "root": "projects/dynamic-forms-app",
+      "sourceRoot": "projects/dynamic-forms-app/src",
       "prefix": "app",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/dynamic-forms",
-            "index": "projects/dynamic-forms/src/index.html",
-            "browser": "projects/dynamic-forms/src/main.ts",
+            "outputPath": "dist/dynamic-forms-app",
+            "index": "projects/dynamic-forms-app/src/index.html",
+            "browser": "projects/dynamic-forms-app/src/main.ts",
             "polyfills": [
               "zone.js"
             ],
-            "tsConfig": "projects/dynamic-forms/tsconfig.app.json",
+            "tsConfig": "projects/dynamic-forms-app/tsconfig.app.json",
             "inlineStyleLanguage": "scss",
             "assets": [
-              "projects/dynamic-forms/src/favicon.ico",
-              "projects/dynamic-forms/src/assets"
+              "projects/dynamic-forms-app/src/favicon.ico",
+              "projects/dynamic-forms-app/src/assets"
             ],
             "styles": [
-              "projects/dynamic-forms/src/styles.scss"
+              "projects/dynamic-forms-app/src/styles.scss"
             ],
             "scripts": []
           },
@@ -84,10 +84,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "dynamic-forms:build:production"
+              "buildTarget": "dynamic-forms-app:build:production"
             },
             "development": {
-              "buildTarget": "dynamic-forms:build:development"
+              "buildTarget": "dynamic-forms-app:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -95,7 +95,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "buildTarget": "dynamic-forms:build"
+            "buildTarget": "dynamic-forms-app:build"
           }
         },
         "test": {
@@ -105,14 +105,14 @@
               "zone.js",
               "zone.js/testing"
             ],
-            "tsConfig": "projects/dynamic-forms/tsconfig.spec.json",
+            "tsConfig": "projects/dynamic-forms-app/tsconfig.spec.json",
             "inlineStyleLanguage": "scss",
             "assets": [
-              "projects/dynamic-forms/src/favicon.ico",
-              "projects/dynamic-forms/src/assets"
+              "projects/dynamic-forms-app/src/favicon.ico",
+              "projects/dynamic-forms-app/src/assets"
             ],
             "styles": [
-              "projects/dynamic-forms/src/styles.scss"
+              "projects/dynamic-forms-app/src/styles.scss"
             ],
             "scripts": []
           }

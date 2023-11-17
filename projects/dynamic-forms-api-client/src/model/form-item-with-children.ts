@@ -9,15 +9,15 @@
  * https://openapi-generator.tech
  * Do not edit the class manually.
  */
-import { Any } from './any';
+import { FormItemWithChildrenEnum } from './form-item-with-children-enum';
+import { WithChildrenInner } from './with-children-inner';
 
 
-export interface PaginatedResponseDto { 
-    total: number;
-    filtered?: number | null;
-    showing: number;
-    limit: number;
-    offset: number;
-    data: Array<Any>;
+export interface FormItemWithChildren { 
+    kind: FormItemWithChildrenEnum;
+    children: Array<WithChildrenInner>;
 }
+export namespace FormItemWithChildren {
+}
+
 

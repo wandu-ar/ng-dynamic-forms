@@ -9,15 +9,12 @@
  * https://openapi-generator.tech
  * Do not edit the class manually.
  */
-import { Any } from './any';
 
 
-export interface PaginatedResponseDto { 
-    total: number;
-    filtered?: number | null;
-    showing: number;
-    limit: number;
-    offset: number;
-    data: Array<Any>;
+export interface FormItemChoiseOptionString { 
+    label?: string | null;
+    shownGroups: Array<string>;
+    hiddenGroups: Array<string>;
+    value?: string | null;
 }
 

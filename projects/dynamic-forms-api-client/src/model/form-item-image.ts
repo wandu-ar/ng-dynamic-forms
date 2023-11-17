@@ -9,15 +9,15 @@
  * https://openapi-generator.tech
  * Do not edit the class manually.
  */
-import { Any } from './any';
+import { FormItemKindImageEnum } from './form-item-kind-image-enum';
 
 
-export interface PaginatedResponseDto { 
-    total: number;
-    filtered?: number | null;
-    showing: number;
-    limit: number;
-    offset: number;
-    data: Array<Any>;
+export interface FormItemImage { 
+    key: string;
+    kind: FormItemKindImageEnum;
+    url: string;
 }
+export namespace FormItemImage {
+}
+
 
